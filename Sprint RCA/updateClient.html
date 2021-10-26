@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+
+    <title>Client</title>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <link rel='stylesheet' id='jquery-ui-base-css'  href='https://code.jquery.com/ui/1.12.1/themes/start/jquery-ui.css' type='text/css' media='all' />
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="logstyle.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li id="logo"><img height="50px" src="Images/logoHopital.jpeg"></li>
+          <li><a href="login.html">Se Déconnecter</a></li>
+          
+          <li><a href="RDV.html">Rendez-vous</a></li>          
+          <li><a href="loginClient.php">Vos Infos</a></li>
+          <li>        </li>
+           <li class="navbar__btn">
+            <a href="" class="button" target="cadreChange">Imprimer</a>
+           </li>
+
+          </ul>
+      </nav>
+      <br><br><br><br><br><br><br>
+      <div id="w4" class="dv" >
+        <form action="loginClient.php" method="POST">
+       <h2>Créer un compte client :</h2>
+      <p>Nom :</p> <input name="nom" type="text" required="required">
+      <p>Prenom:</p> <input name="prenom" type="text" required="required"><br><br>
+      <p>Sexe :</p> <select name="Sexe" style="width:300px" size="1" >
+                                <option selected="selected" value="Male">M</option>
+                          <option value="Female">F</option>
+                      </select><br><br>
+  
+      <p>Telephone :</p> <input name="telephone" type="number" required="required">
+      <p>Adresse :</p> <input name="adresse" type="text" required="required">
+      <p>Date de naissance :</p> <input name="naissance" type="text" placeholder="DD/MM/YYYY" required="required">
+      <p>Login :</p> <input name="login" type="text" required="required">
+      <p>Password :</p> <input name="password" type="text" required="required">
+      <br><br>
+      <input type="submit" value="VALIDER">
+            </form></div>
+     
