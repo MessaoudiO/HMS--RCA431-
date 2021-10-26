@@ -1,0 +1,50 @@
+body
+{
+	background-color:black;
+}
+
+#warpper
+{
+	margin: auto;
+	width: 45%;
+
+	
+}
+
+#MainImage{
+width:600px;
+height:400px;
+    }
+    
+img
+{
+	
+	width:600px;
+	height:400px;
+}
+.choix
+{
+	
+	width:197px;
+	height:160px;
+   opacity:.5;
+position: relative;
+
+}
+
+#bouton
+{
+	margin: auto;
+	width:600px;
+	height:40px;
+    border-radius: 20px;
+	
+}
+#balle {
+    width: 12px;
+    height: 12px;
+    background-color: red;
+    border: red 2px solid;
+    border-radius : 12px;
+    position: relative;
+  }
