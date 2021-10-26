@@ -1,0 +1,77 @@
+html {
+    scroll-behavior: smooth;
+  }
+              body{
+      font-family: latha;
+      color: white;
+      background: url(Images/imagePrincipale.jpg)no-repeat;
+      background-size: cover;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  p{
+    color:black;
+  }
+  
+  .box{ width: 900px;
+           margin-left: 320px;
+            height:100px;
+              border: 1px solid rgba(169, 169, 169, 0.5) ;}
+  
+   
+   .box ul li {
+       width: 120px;
+       float: left;
+       margin: 10px auto;
+       text-align: center;
+   }
+  
+   .box ul li a{ text-decoration: none;
+   color: white;}
+  
+   .box ul li:hover{ background-color: black;}
+   .box ul li a:hover {color: white;}
+  
+  
+   body {
+    background-color:#fff;
+    -webkit-font-smoothing: antialiased;
+    font: normal 14px Roboto,arial,sans-serif;
+  }
+    
+  
+  #w1{
+      width:30.3% ;
+  background-color: rgba(169, 169, 169, 0.5);
+        float:left;
+        text-align:center;
+    }
+    
+  #w2{
+      width:30.3% ;
+      background-color: rgba(169, 169, 169, 0.5);
+        float:right;
+        text-align:center;
+    }
+    .dv{
+        margin-top: 100px;
+    }
+    #w3{
+      width:30.3% ;
+      background-color: rgba(169, 169, 169, 0.5);
+        float:right;
+        text-align:center;
+       margin-right: 60px;
+    }
+    #w4{
+      width:30.3% ;
+      background-color: rgba(169, 169, 169, 0.5);
+      
+      text-align:center;
+    }
+    ul {
+    margin: 0;
+    padding: 0;
+  }
