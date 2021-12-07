@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+
+    <title>LOGIN</title>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <link rel='stylesheet' id='jquery-ui-base-css'  href='https://code.jquery.com/ui/1.12.1/themes/start/jquery-ui.css' type='text/css' media='all' />
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="logstyle.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li id="logo"><img height="50px" src="Images/logoHopital.jpeg"></li>
+          <li><a href="Contactez.html">Contactez-nous</a></li>
+          
+          <li><a href="login.html">Login</a></li>          
+          <li><a href="Home.html">Intro</a></li>
+          <li>        </li>
+           <li class="navbar__btn">
+            <a href="" class="button" target="cadreChange">Imprimer</a>
+           </li>
+
+          </ul>
+      </nav>
+      <div class="dv" id="w1"> <form action="loginClient.php" method="POST">
+        <h2>CLIENT :</h2>
+     <p>Username :</p> <input name="login" type="text">
+     <p>Password :</p> <input name="password" type="text"><br><br>
+         <input type="submit" value="VALIDER">
+             </form>
+    </div>
+    <div id="w2" class="dv" >
+      <form action="ajoutClient.php" method="POST">
+     <h2>Créer un compte client :</h2>
+    <p>Nom :</p> <input name="nom" type="text" required="required">
+    <p>Prenom:</p> <input name="prenom" type="text" required="required"><br><br>
+    <p>Sexe :</p> <select name="Sexe" style="width:300px" size="1" >
+			                  <option selected="selected" value="Male">M</option>
+                        <option value="Female">F</option>
+                    </select><br><br>
+
+    <p>Telephone :</p> <input name="telephone" type="number" required="required">
+    <p>Adresse :</p> <input name="adresse" type="text" required="required">
+    <p>Date de naissance :</p> <input name="naissance" type="text" placeholder="DD/MM/YYYY" required="required">
+    <p>Login :</p> <input name="login" type="text" required="required">
+    <p>Password :</p> <input name="password" type="text" required="required">
+    <br><br>
+    <input type="submit" value="VALIDER">
+    </form></div>
+    <div id="w3" class="dv"> <form action="loginMedecin.php" method="POST">
+     <h2>MEDECIN :</h2>
+    <p>Login:</p> <input name="login" type="text">
+    <p>Password :</p> <input name="password" type="text"><br><br>
+                  <input name="sub" type="submit" value="VALIDER">
+          </form>
+    </header>
+  </body>
+</html>  

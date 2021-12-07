@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+
+    <title>RDV</title>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <link rel='stylesheet' id='jquery-ui-base-css'  href='https://code.jquery.com/ui/1.12.1/themes/start/jquery-ui.css' type='text/css' media='all' />
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="logstyle.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li id="logo"><img height="50px" src="Images/logoHopital.jpeg"></li>
+          <li><a href="login.html">Se Déconnecter</a></li>
+          
+          <li><a href="RDV.html">Rendez-vous</a></li>          
+          <li><a href="loginClient.php">Vos Infos</a></li>
+          <li>        </li>
+           <li class="navbar__btn">
+            <a href="" class="button" target="cadreChange">Imprimer</a>
+           </li>
+
+          </ul>
+      </nav>
+      <br><br>
+      <div id="w2" class="dv" >
+        <form action="loginClient.php" method="POST">
+       <h2>Prendre un RDV :</h2>
+      <p>nom</p> <input name="nom" type="text">
+      <p>prenom</p> <input name="prenom" type="text"><br><br>
+      <p>Specialité :</p> <select name="Specialité" style="width: 350px;height: 40px;" size="1" >
+                                 <option selected="selected" value="MedFamille">Médecine de famille</option>
+                                 <option value="Cardiologue">Cardiologue</option>
+                                 <option value="Neurologue">Neurologue</option>
+                                 <option value="Dermatologue">Dermatologue</option>
+                                 <option value="Endocrinologue">Endocrinologue</option>
+                                 <option value="Ophtalmologue">Ophtalmologue</option>
+                           </select><br><br>
+       <p>Medecin :</p> <select name="Medecin" style="width: 350px;height: 40px;" size="1" >
+                                  <option selected="selected" value="Medein"><?php echo"$id";?></option>
+      <br><br>
+      <p>Datedu rendez-vous</p> <input name="date" type="datetime" required="required" placeholder="DD/MM/YYYY">
+      <p>Heure du rendez-vous</p> <input name="date" type="time" required="required" placeholder="HH:MM">
+      <input type="submit" value="VALIDER">
+            </form></div>
+            <div class="dv" id="w1"> <form action="loginClient.php" method="POST">
+              <h2>Vos Rendez-vous :</h2>
+              <tr><td id="tdRend">
+                <p>Rendez-vous avec<?php echo"$id";?> le <?php echo"$id";?> à <?php echo"$id";?></p>
+              </td></tr>
+           </form>
+          </div>
+         
+        </div>
